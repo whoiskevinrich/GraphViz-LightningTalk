@@ -1,0 +1,8 @@
+digraph {
+
+    label = "Graphs are Top/Bottom by default"
+
+    a -> b;
+    b -> c;
+    a -> c;
+}

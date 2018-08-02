@@ -1,0 +1,20 @@
+digraph G {
+    rankdir=LR;
+    bgcolor=transparent
+    node [style=filled, color=lightblue];
+
+    node [shape=diamond, height=2,width=2]
+    HEARDOF [label="Have you heard\nof GraphViz?"]
+    USED [label="Have you used\nGraphViz?"]
+
+    node [shape=circle, height=1.5, width=1.5]
+    CROSSARMS [label="Cross\nYour Arms"]
+    RAISEHAND [label="Raid\nYour Hand"]
+    RAISE2HANDS [shape=doublecircle,label="Raise\nBoth Hands", color=lightgreen]
+
+
+    HEARDOF -> CROSSARMS [label="No"]
+    HEARDOF -> USED [label="Yes"]
+    USED -> RAISEHAND [label="No"]
+    USED -> RAISE2HANDS [label="Yes"]
+}

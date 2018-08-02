@@ -1,0 +1,10 @@
+digraph {
+    
+    label = "Nodes have attributes";
+
+    a [style=filled, fillcolor=lightgreen];
+    b [shape = "rectangle", style=filled, fillcolor="0.650 0.200 1.000"]
+    c [shape = "diamond", style=filled, fillcolor="red"]
+    d [shape = "doublecircle"]
+    e [label="N(5)"]
+}

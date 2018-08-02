@@ -1,0 +1,16 @@
+digraph {
+
+    label = "Attributes can be set on groups";
+
+    node[color=lightblue, style=filled, shape=diamond]
+    edge[color=green, arrowhead=diamond]
+
+    a -> b;
+    b -> c;
+    a -> c;
+
+    node[color=red]
+    edge[arrowhead=crow]
+
+    d -> e
+}

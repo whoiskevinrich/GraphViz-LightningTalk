@@ -1,0 +1,19 @@
+digraph {
+
+    START [label="Executable Started"]
+    END [label="Program Exits"]
+
+    DATA [label="Data Retrieved"]
+    SERVICE [label="Business Logic Executed"]
+    LOGGING [label="Results logged"]
+
+    subgraph cluster_0 {
+        DATA -> SERVICE -> LOGGING
+    }
+
+    START -> DATA [lhead=cluster_0];
+    LOGGING -> END [ltail=cluster_0]
+
+    label = "Aliasing Makes changes Easier";
+    compound = true;
+}

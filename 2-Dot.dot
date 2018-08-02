@@ -1,0 +1,19 @@
+digraph G {
+
+  label="Developers typically suck at drawing"
+
+  compound = true;
+
+  subgraph cluster_0 {
+    label = "Describing Graphs"
+    "DOT Language" -> "Graphs" [label= " describes"] 
+  }
+  
+  "Graphs" -> "Using" [ltail=cluster_0];
+  "Using" -> "Node 1" [lhead=cluster_1];
+  
+  subgraph cluster_1 {
+    label = "Graph Syntax"
+    "Node 1" -> "Node 2" [label=" edge"]
+  }
+}
