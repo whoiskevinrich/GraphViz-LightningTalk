@@ -1,0 +1,22 @@
+digraph G {
+
+  # GRAPH PROPERTIES
+  label="Developers typically suck at drawing"
+  compound = true;
+
+  # CLUSTERS
+  subgraph cluster_0 {
+    label = "Describing Graphs"
+    "DOT Language" -> "Graphs" [label= " describes"] 
+  }
+  
+  subgraph cluster_1 {
+    label = "Graph Syntax"
+    "Node 1" -> "Node 2" [label=" edge"]
+  }
+
+  # NODES
+  "Graphs" -> "Using" [ltail=cluster_0];
+  "Using" -> "Node 1" [lhead=cluster_1];
+}
+

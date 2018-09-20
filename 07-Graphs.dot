@@ -1,0 +1,9 @@
+graph {
+  
+    label="An undirected graph"
+
+    a -- b;
+    b -- c;
+    c -- a;
+}
+

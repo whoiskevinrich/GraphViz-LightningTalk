@@ -1,0 +1,24 @@
+
+digraph {
+
+    compound=true;
+
+    subgraph cluster_0 {
+        a -> b -> c
+    }
+
+    subgraph cluster_1 {
+        d -> e -> f
+    }
+
+    subgraph cluster_2 {
+        g -> h -> i
+    }
+
+    b -> d;
+    d -> g [lhead=cluster_2, ltail=cluster_1]
+
+    label = "Subgraphs are handy.
+Compound directive allows linking
+from subgraph instead of node";
+}

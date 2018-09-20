@@ -1,0 +1,10 @@
+digraph {
+
+    label = "Graphs can be Left/Right";
+
+    rankdir=LR;
+
+    a -> b;
+    b -> c;
+    a -> c;
+}

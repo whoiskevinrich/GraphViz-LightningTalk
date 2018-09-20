@@ -1,0 +1,12 @@
+
+digraph {
+
+    label = "This grouping may bother some people"
+
+    a -> b;
+    b -> c;
+    a -> c;
+    b -> d;
+    d -> e;
+}
+

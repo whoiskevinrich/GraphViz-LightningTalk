@@ -1,0 +1,14 @@
+digraph G {
+  
+  # GRAPH PROPERTIES
+  bgcolor=transparent;
+  rankdir=LR
+  label = "Twitter: @whoiskevinirch"
+
+  # NODE STYLE
+  node[style=filled]  
+
+  # GRAPH
+  "whoiskevinrich" -> "@" -> "bookbyte" -> "." -> "com"
+}
+

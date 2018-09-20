@@ -1,7 +1,0 @@
-digraph G {
-  
-  label = "@whoiskevinirch"
-
-  "Welcome" -> "To"
-  "To" -> "WVSE"
-}

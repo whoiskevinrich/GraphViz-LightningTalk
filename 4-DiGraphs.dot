@@ -1,8 +1,0 @@
-digraph {
-    label = "A directed graph"
-    
-    a -> b;
-    b -> c;
-    c -> d;
-    d -> a;
-}

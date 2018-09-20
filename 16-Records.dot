@@ -1,0 +1,17 @@
+digraph {
+
+    label = "Records can be defined with specific nodes and labels";
+
+    node[shape=record]
+
+    record1 [label="<l>left|<m>middle|<r>right"]
+    record2 [label="<f>first|<s>second|<t>third"]
+
+    tictactoe [label="{<lt>X|X|O} | {O|X| } | {X|O|<rb>O}"]
+
+    record1:l -> tictactoe:lt
+    record2:f -> tictactoe:lt
+
+    record1:r -> tictactoe:rb
+    record2:t -> tictactoe:rb
+}
